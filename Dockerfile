@@ -5,7 +5,8 @@ RUN apt-get update \
     && apt-get install -y python3 \
     python3-pip \
     liblas-c3 \
-    && pip3 install pandas \
+    && pip3 install ipython \
+    pandas \
     liblas \
     && rm -rf /var/lib/apt/lists/*
 
