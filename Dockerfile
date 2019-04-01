@@ -7,6 +7,10 @@ RUN apt-get update \
     liblas-c3 \
     && pip3 install ipython \
     pandas \
+    plotly \
+    numpy \
+    matplotlib\
+    scipy.spatial \
     liblas \
     && rm -rf /var/lib/apt/lists/*
 
