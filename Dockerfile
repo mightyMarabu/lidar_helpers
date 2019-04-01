@@ -30,13 +30,16 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     tzdata \
     unzip \
     nano \
+    python3 \
+    python3-pip \
+    liblas-c3 \
  # lidar libs   
     && pip3 install pandas \
     geopandas \
     plotly \
     numpy \
     matplotlib\
-    scipy.spatial \
+    scipy \
     liblas \
     && rm -rf /var/lib/apt/lists/*
 
