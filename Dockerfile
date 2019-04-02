@@ -1,12 +1,10 @@
-from jupyter/minimal-notebook
+from jupyter/minimal-notebook:latest
 # Maintainer Sebastian Schmidt
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \ 
-    python3 \
     python3-pip \
     liblas-c3 \
- # lidar libs   
-    && pip3 install pandas \
+ && pip3 install pandas \
     geopandas \
     plotly \
     numpy \
