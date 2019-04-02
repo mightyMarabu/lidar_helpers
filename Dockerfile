@@ -4,6 +4,7 @@ FROM jupyter/minimal-notebook:latest
 USER root
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \ 
+    python3-setuptools \
     python3-pip \
     liblas-c3 \
  && pip3 install pandas \
