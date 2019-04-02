@@ -1,4 +1,5 @@
-FROM jupyter/jupyter/base-notebook
+FROM jupyter/base-notebook
+#jupyter/scipy-notebook
 # Maintainer Sebastian Schmidt
 
 USER root
@@ -15,3 +16,4 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
  && rm -rf /var/lib/apt/lists/*
     
 RUN mkdir data
+#jupyter/scipy-notebook
