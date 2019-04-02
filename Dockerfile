@@ -1,5 +1,7 @@
-from jupyter/minimal-notebook:latest
+FROM jupyter/minimal-notebook:latest
 # Maintainer Sebastian Schmidt
+
+USER root
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \ 
     python3-pip \
