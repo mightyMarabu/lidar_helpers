@@ -1,10 +1,10 @@
-FROM jupyter/minimal-notebook:latest
+FROM jupyter/jupyter/base-notebook
 # Maintainer Sebastian Schmidt
 
 USER root
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \ 
-    liblas-c3 \
+    liblas-c \
  && conda install pandas \
     geopandas \
     plotly \
