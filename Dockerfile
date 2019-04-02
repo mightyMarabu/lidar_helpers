@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     numpy \
     matplotlib\
     scipy \
-    -c auto liblas
+    -c auto liblas \
  && rm -rf /var/lib/apt/lists/*
     
 RUN mkdir data
