@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 
 COPY requirements.txt /tmp/
 
+RUN conda update -n base conda
+
 RUN pip3 install --requirement /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
