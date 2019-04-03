@@ -7,6 +7,7 @@ USER root
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \
     python3 \
+    python3-pip \
     liblas-c3
 
 COPY requirements.txt /tmp/
