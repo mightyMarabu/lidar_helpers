@@ -16,7 +16,7 @@ COPY requirements.txt /tmp/
 
 RUN conda update -n base conda
 
-RUN conda install --requirement /tmp/requirements.txt && \
+RUN pip install --requirement /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
     
