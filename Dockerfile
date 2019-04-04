@@ -5,18 +5,18 @@ FROM jupyter/base-notebook
 USER root
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \
-    python3 \
-    python3-pip \
-    python3-setuptools \
+#    python3 \
+#    python3-pip \
+#    python3-setuptools \
     liblas-c3
 
-RUN pip install 'ggplot==0.6.8'
+# RUN pip install 'ggplot==0.6.8'
 
 COPY requirements.txt /tmp/
 
 RUN conda update -n base conda
 
-RUN pip3 install --requirement /tmp/requirements.txt && \
+RUN conda install --requirement /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
     
