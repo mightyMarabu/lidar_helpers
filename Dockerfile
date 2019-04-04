@@ -1,5 +1,5 @@
 FROM jupyter/base-notebook
-#jupyter/scipy-notebook
+
 # Maintainer Sebastian Schmidt
 
 USER root
@@ -21,3 +21,4 @@ RUN pip install --requirement /tmp/requirements.txt && \
     fix-permissions /home/$NB_USER
     
 RUN mkdir data
+COPY data/job461475_20156_72_90.las /data/
