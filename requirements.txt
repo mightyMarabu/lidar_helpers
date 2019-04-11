@@ -2,4 +2,5 @@ matplotlib
 plotly
 scipy
 geopandas
+rasterio
 liblas
