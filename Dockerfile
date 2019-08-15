@@ -21,4 +21,4 @@ RUN pip install --requirement /tmp/requirements.txt && \
     fix-permissions /home/$NB_USER
     
 RUN mkdir data
-COPY data/job461475_20156_72_90.las /data/
+COPY data/job461475_20156_72_90.las /home/jovyan/data/
