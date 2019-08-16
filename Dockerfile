@@ -23,3 +23,6 @@ RUN pip install --requirement /tmp/requirements.txt && \
     
 RUN mkdir data
 COPY data/job461475_20156_73_87.las /home/jovyan/data/
+
+RUN mkdir notebooks
+COPY notenooks/plotly.ipynb /home/jovyan/notebooks/
