@@ -1,6 +1,5 @@
 matplotlib
 plotly
-psutil
 scipy
 geopandas
 rasterio
