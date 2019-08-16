@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 
 COPY requirements.txt /tmp/
 
-RUN conda update -n base conda \
+RUN conda update -n base conda && \
     conda install psutil
 
 RUN pip install --requirement /tmp/requirements.txt && \
