@@ -21,6 +21,8 @@ RUN pip install --requirement /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
     
+RUN pip install numpy-stl
+    
 RUN mkdir data
 COPY data/job461475_20156_73_87.las /home/jovyan/data/
 
