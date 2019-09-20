@@ -15,13 +15,12 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 COPY requirements.txt /tmp/
 
 RUN conda update -n base conda && \
-    conda install psutil
+    conda install psutil && \
+    conda install -c plotly chart-studio
 
 RUN pip install --requirement /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
-    
-RUN pip install numpy-stl
     
 RUN mkdir data
 COPY data/job461475_20156_73_87.las /home/jovyan/data/
