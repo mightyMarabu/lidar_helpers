@@ -4,5 +4,5 @@ scipy
 geopandas
 rasterio
 liblas
-psycopg2
+psycopg2-binary
 pymysql
