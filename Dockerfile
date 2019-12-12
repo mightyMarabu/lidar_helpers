@@ -16,7 +16,7 @@ COPY requirements.txt /tmp/
 
 RUN conda update -n base conda && \
     conda install psutil && \
-    conda install -c plotly chart-studio \
+    conda install -c plotly chart-studio && \
     conda install sqlite3
 
 RUN pip install --requirement /tmp/requirements.txt && \
