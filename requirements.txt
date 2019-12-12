@@ -7,3 +7,5 @@ liblas
 psycopg2-binary
 pymysql
 mysql-connector-python
+sqlite3
+json
