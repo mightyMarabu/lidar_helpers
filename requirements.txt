@@ -2,6 +2,7 @@ matplotlib
 plotly
 scipy
 geopandas
+pptk
 rasterio
 liblas
 psycopg2-binary
