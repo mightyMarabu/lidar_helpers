@@ -24,7 +24,7 @@ RUN pip install --requirement /tmp/requirements.txt && \
     fix-permissions /home/$NB_USER
     
 RUN mkdir data
-COPY data/job461475_20156_73_87.las /home/jovyan/data/
+COPY data/ /home/jovyan/data/
 
 RUN mkdir notebooks
-COPY notebooks/plotly.ipynb /home/jovyan/notebooks/
+COPY notebooks/ /home/jovyan/notebooks/
