@@ -4,6 +4,7 @@ chart-studio
 scipy
 geopandas
 folium
+ipywidgets
 pptk
 rasterio
 liblas
