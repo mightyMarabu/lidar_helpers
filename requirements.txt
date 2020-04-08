@@ -3,6 +3,7 @@ plotly
 chart-studio
 scipy
 geopandas
+folium
 pptk
 rasterio
 liblas
