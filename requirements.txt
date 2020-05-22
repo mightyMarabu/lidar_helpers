@@ -11,3 +11,4 @@ liblas
 psycopg2-binary
 pymysql
 mysql-connector-python
+flask
