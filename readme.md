@@ -17,3 +17,8 @@ http://plas.io/
 ## Sample Data
 
 https://www.lidarusa.com/sample-data.html
+
+# Mashine Learning
+## getting started Tutorial
+
+https://machinelearningmastery.com/python-machine-learning-mini-course/
