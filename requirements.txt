@@ -2,6 +2,7 @@ matplotlib
 plotly
 chart-studio
 scipy
+sklearn
 geopandas
 folium
 ipywidgets
