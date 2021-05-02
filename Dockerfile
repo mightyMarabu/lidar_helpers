@@ -4,7 +4,7 @@ FROM jupyter/base-notebook
 
 USER root
 
- RUN apt-get update && apt-get install -yq --no-install-recommends \
+RUN apt-get update && apt-get install -yq --no-install-recommends \
 #    python3 \
 #    python3-pip \
 #    python3-setuptools \
@@ -16,8 +16,8 @@ COPY requirements.txt /tmp/
 
 RUN conda update -n base conda && \
     conda install psutil && \
-    conda install -c plotly chart-studio && \
-    conda install -c blaze sqlite3
+    conda install -c plotly chart-studio
+#    conda install -c blaze sqlite3
 
 RUN pip install --requirement /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
