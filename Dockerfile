@@ -14,14 +14,14 @@ USER root
 
 COPY requirements.txt /tmp/
 
-RUN conda update -n base conda && \
-    conda install psutil && \
-    conda install -c plotly chart-studio
+# RUN conda update -n base conda && \
+#    conda install psutil && \
+#    conda install -c plotly chart-studio
 #    conda install -c blaze sqlite3
 
 RUN pip install --requirement /tmp/requirements.txt && \
-    fix-permissions $CONDA_DIR && \
-    fix-permissions /home/$NB_USER
+#    fix-permissions $CONDA_DIR && \
+#    fix-permissions /home/$NB_USER
     
 RUN mkdir data
 COPY data/ /home/jovyan/data/
