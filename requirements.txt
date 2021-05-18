@@ -6,7 +6,6 @@ sklearn
 geopandas
 folium
 ipywidgets
-pptk
 rasterio
 liblas
 psycopg2-binary
